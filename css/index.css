@@ -32,7 +32,18 @@ nav {
 }
 
 .btn_wrapper {
-    margin-top: 50px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn_view_event {
+    background-color: #ff7675;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
 }
 
 .time_wrapper {
