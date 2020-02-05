@@ -72,3 +72,9 @@ nav {
 .dark_mode .sidenav a {
     color: #fff;
 }
+
+@media(max-width:789px) {
+    .dark_mode #progress-bar {
+        width: 5px;
+    }
+}
