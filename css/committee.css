@@ -29,6 +29,12 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: -50px;
+}
+
+.dark_mode .committee_wrapper {
+    font-size: 20px;
+    color: white;
 }
 
 @media(max-width:789px) {

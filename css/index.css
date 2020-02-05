@@ -29,7 +29,10 @@ nav {
 
 .text_wrapper {
     margin: auto;
-    text-align: center;
+}
+
+.btn_wrapper {
+    margin-top: 50px;
 }
 
 .time_wrapper {
@@ -195,6 +198,13 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .text_wrapper {
+        margin-top: 10px;
+        text-align: center;
+    }
+    .btn_wrapper {
+        margin-top: 50px;
     }
     .section1_wrapper .text_wrapper h3 {
         font-size: 25px;
