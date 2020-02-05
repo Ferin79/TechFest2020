@@ -25,6 +25,7 @@ nav {
     width: 80%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .text_wrapper {
@@ -34,16 +35,26 @@ nav {
 .btn_wrapper {
     margin: 50px auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.btn_view_event {
+.btn_view_1 {
     background-color: #ff7675;
     padding: 10px;
     text-align: center;
     color: white;
     border-radius: 15px;
+    margin: 0 20px;
+}
+
+.btn_view_2 {
+    background-color: #0984e3;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    margin: 0 20px;
 }
 
 .time_wrapper {
