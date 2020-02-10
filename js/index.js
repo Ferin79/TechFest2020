@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    $('.sidenav').sidenav();
     $('.carousel').carousel({
         duration: 200,
         fullWidth: true,

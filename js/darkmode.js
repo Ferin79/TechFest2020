@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $('.sidenav').sidenav();
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
         dh = $(document).height();
