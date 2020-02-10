@@ -52,6 +52,11 @@ nav {
     background-color: var(--background-color) !important;
 }
 
+.brand-logo {
+    margin: auto !important;
+    margin-top: -15px !important;
+}
+
 .card {
     border-radius: 25px;
 }
