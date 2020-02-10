@@ -15,6 +15,7 @@ const files_to_cache = [
     'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css',
     'https://unpkg.com/aos@2.3.1/dist/aos.css',
     'https://fonts.googleapis.com/icon?family=Material+Icons',
+    './images/index_logo.png'
 ];
 
 self.addEventListener('install', (evt) => {
