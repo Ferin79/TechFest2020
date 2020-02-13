@@ -1,4 +1,4 @@
-import ('/js/events-model.js').then(res => {
+import ('../js/events-model.js').then(res => {
     let events = res.events;
     events = events.filter(event => event.Department === 'Applied Science');
     console.log(events);
