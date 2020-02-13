@@ -3,7 +3,6 @@ const files_to_cache = [
     './',
     './index.html',
     './pages/committee.html',
-    './pages/department.html',
     './pages/events.html',
     './css/index.css',
     './css/default.css',
