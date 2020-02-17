@@ -130,6 +130,68 @@ footer {
     background-color: #ffff99;
 }
 
+.scroll_down {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-95%, -50%);
+    height: 40px;
+    width: 40px;
+    transform: translateY(-80px) translateX(-50%) rotate(45deg);
+    visibility: hidden;
+}
+
+.scroll_down span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    animation: animate 1.5s linear infinite;
+}
+
+.dark_mode .scroll_down span {
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.scroll_down span:nth-child(1) {
+    transform: translate(-15px, -15px);
+    animation-delay: -0.4s;
+}
+
+.scroll_down span:nth-child(2) {
+    transform: translate(0, 0);
+    animation-delay: -0.2s;
+}
+
+.scroll_down span:nth-child(3) {
+    transform: translate(15px, 15px);
+    animation-delay: 0s;
+}
+
+@keyframes animate {
+    0% {
+        top: -5px;
+        left: -5px;
+        opacity: 0;
+    }
+    25% {
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    }
+    50%,
+    100% {
+        top: 5px;
+        left: 5px;
+        opacity: 0;
+    }
+}
+
 @media(max-width:560px) {
     .brand-logo {
         margin-top: -20px !important;

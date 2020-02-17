@@ -11,6 +11,9 @@ $(document).ready(function() {
     }, 2000);
 
     $('.collapsible').collapsible();
+    setTimeout(function() {
+        $('.scroll_down').css('visibility', 'visible');
+    }, 3000);
 });
 
 var countDownDate = new Date("Mar 23, 2020 00:00:00").getTime();

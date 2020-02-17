@@ -6,6 +6,7 @@ $(document).ready(function() {
         wh = $(window).height();
         var scrollpercent = (scroll / (dh - wh)) * 100;
         $("#progress-bar").css('height', scrollpercent + '%');
+        $('.scroll_down').css('visibility', 'hidden');
     });
     let darkmode = parseInt(localStorage.getItem('darkmode'));
     console.log(darkmode);
