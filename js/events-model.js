@@ -7,7 +7,7 @@ export const events = [{
         "Maximum Participants": "1",
         "Description": "",
         "Rules": "",
-        "images": "/images/events/"
+        "images": "catechism.svg"
     },
     {
         "Department": "Computer",
@@ -62,7 +62,7 @@ export const events = [{
         "Maximum Participants": "1",
         "Description": "",
         "Rules": "",
-        "images": "/images/events/"
+        "images": "NFS_MW.svg"
     },
     {
         "Department": "Applied Science",
@@ -84,7 +84,7 @@ export const events = [{
         "Maximum Participants": "2",
         "Description": "",
         "Rules": "",
-        "images": "/images/events/"
+        "images": "Escape_room.svg"
     },
     {
         "Department": "Applied Science",
@@ -106,7 +106,7 @@ export const events = [{
         "Maximum Participants": "4",
         "Description": "",
         "Rules": "",
-        "images": "/images/events/"
+        "images": "Box_cricket.svg"
     },
     {
         "Department": "Applied Science",
@@ -139,7 +139,7 @@ export const events = [{
         "Maximum Participants": "4",
         "Description": "",
         "Rules": "",
-        "images": "/images/events/"
+        "images": "line_follower.svg"
     },
     {
         "Department": "Electrical",
@@ -150,7 +150,7 @@ export const events = [{
         "Maximum Participants": "2",
         "Description": "",
         "Rules": "",
-        "images": "/images/events/"
+        "images": "circuit_samiksha.svg"
     },
     {
         "Department": "Electrical",
@@ -172,7 +172,7 @@ export const events = [{
         "Maximum Participants": "4",
         "Description": "",
         "Rules": "",
-        "images": "/images/events/"
+        "images": "civil-planovanie.png"
     },
     {
         "Department": "Civil",
@@ -238,7 +238,7 @@ export const events = [{
         "Maximum Participants": "1",
         "Description": "",
         "Rules": "",
-        "images": "/images/events/"
+        "images": "CAD.svg"
     },
     {
         "Department": "Mechanical",
@@ -249,7 +249,7 @@ export const events = [{
         "Maximum Participants": "2",
         "Description": "",
         "Rules": "",
-        "images": "/images/events/"
+        "images": "Interbrains_Debate.svg"
     },
     {
         "Department": "E&C",

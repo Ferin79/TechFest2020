@@ -23,6 +23,7 @@ html {
     height: 0%;
     border-radius: 10px;
     background: linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);
+    z-index: 500;
 }
 
 :root {
@@ -49,12 +50,16 @@ body {
 
 nav {
     height: 10vh !important;
-    background-color: var(--background-color) !important;
+    background-color: #3dc1d3!important;
 }
 
 .brand-logo {
     margin: auto !important;
     margin-top: -15px !important;
+}
+
+.dark_mode nav {
+    background-color: #2d3436 !important;
 }
 
 .card {
@@ -80,6 +85,12 @@ nav {
 
 .dark_mode .sidenav a {
     color: #fff;
+}
+
+.card-image img {
+    height: auto;
+    width: auto;
+    padding: 50px;
 }
 
 @media(max-width:789px) {

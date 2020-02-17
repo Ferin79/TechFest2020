@@ -8,7 +8,7 @@ import ('../js/events-model.js').then(res => {
             `<div class="col s12 m4 ">
             <div class="card">
                 <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator responsive-img" src="../../images/events/computer-lan-gaming.png" height="350" width="200">
+                    <img class="activator responsive-img" src="../../images/events/${event['images']}" height="350" width="200">
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">${event['Event Name']}<i class="material-icons right">more_vert</i></span>

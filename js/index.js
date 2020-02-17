@@ -13,7 +13,6 @@ $(document).ready(function() {
     $('.collapsible').collapsible();
 });
 
-
 var countDownDate = new Date("Mar 23, 2020 00:00:00").getTime();
 
 var x = setInterval(function() {
@@ -36,7 +35,5 @@ var x = setInterval(function() {
         clearInterval(x);
     }
 }, 1000);
-
-
 
 AOS.init();
