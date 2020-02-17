@@ -58,6 +58,10 @@ nav {
     transition: all 0.2s ease-in-out;
 }
 
+.dark_mode .timeline_wrapper h6 a {
+    color: white;
+}
+
 .timeline_wrapper h6 a:hover {
     cursor: pointer;
     font-size: 22px;
