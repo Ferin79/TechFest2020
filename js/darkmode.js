@@ -7,11 +7,15 @@ $(document).ready(function() {
         var scrollpercent = (scroll / (dh - wh)) * 100;
         $("#progress-bar").css('height', scrollpercent + '%');
     });
-    if (parseInt(localStorage.getItem('darkmode')) == 0) {
-        $('body').removeClass('dark_mode');
-        localStorage.setItem('darkmode', '0');
+    let darkmode = localStorage.getItem('darkmode');
+    if (darkmode) {
+        if (Boolean(darkmode)) {
+            $('body').addClass('dark_mode');
+        } else {
+            $('body').removeClass('dark_mode');
+        }
     } else {
-        $('body').addClass('dark_mode');
+        localStorage.setItem('darkmode', '0');
     }
 
     $(".toggle_dark_mode").click(() => {
