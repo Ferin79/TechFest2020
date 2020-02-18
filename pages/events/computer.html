@@ -9,13 +9,16 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../../css/default.css">
+    <script src="../../js/computer.js"></script>
+
 </head>
 
 <body>
     <div id="progress-bar"></div>
     <nav>
         <div class="nav-wrapper">
-            <a href="/" class="brand-logo"><img src="../../images/logo_dark.png" height="auto" width="200"></a>
+            <a href="../../index.html" class="brand-logo"><img src="../../images/logo_dark.png" height="auto"
+                    width="200"></a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="/">Home</a></li>
@@ -26,7 +29,7 @@
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="/">Home</a></li>
+        <li><a href="../../index.html">Home</a></li>
         <li><a href="../../index.html#departments">Departments</a></li>
         <li><a href="../committee.html">Committee</a></li>
     </ul>
@@ -38,13 +41,24 @@
 
         </div>
     </section>
-    <a class="btn-floating btn-large waves-effect waves-light black right toggle_dark_mode" style="margin-right: 20px;"><i class="material-icons">invert_colors</i></a>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Modal Header</h4>
+            <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+
+    <a class="btn-floating btn-large waves-effect waves-light black right toggle_dark_mode"
+        style="margin-right: 20px;"><i class="material-icons">invert_colors</i></a>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="../../js/darkmode.js"></script>
-<script src="../../js/computer.js"></script>
 
 </html>

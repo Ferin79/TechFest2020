@@ -1,8 +1,8 @@
-import ('../js/events-model.js').then(res => {
+import('../js/events-model.js').then(res => {
     let events = res.events;
     events = events.filter(event => event.Department === 'Computer');
     console.log(events);
-
+    $('.modal').modal();
     events.map(event => {
         $('#event_added').append(
             `<div class="col s12 m4 ">
@@ -12,9 +12,10 @@ import ('../js/events-model.js').then(res => {
                 </div>
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">${event['Event Name']}<i class="material-icons right">more_vert</i></span>
+                    <a class="waves-effect blue waves-light btn modal-trigger" href="#modal1">View More</a>
 
                 </div>
-                <div class="card-reveal">
+                <div class="card-reveal" id="#modal1">
                     <span class="card-title grey-text text-darken-4">${event['Event Name']}<i class="material-icons right">close</i></span>
                     <div class="card_text">
                         <h6>Event Code: <strong style="font-weight: bold;">${event['Event Code']}</strong></h6>
@@ -25,7 +26,8 @@ import ('../js/events-model.js').then(res => {
                     </div>
                 </div>
             </div>
-        </div>`
+        </div>
+        `
         )
     })
 });

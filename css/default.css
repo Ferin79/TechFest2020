@@ -1,100 +1,100 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 * {
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
-    scroll-behavior: smooth;
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  scroll-behavior: smooth;
 }
 
 html {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
-    width: 0%;
+  width: 0%;
 }
 
 .dark_mode #progress-bar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 15px;
-    height: 0%;
-    border-radius: 10px;
-    background: linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);
-    z-index: 500;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 0%;
+  border-radius: 10px;
+  background: linear-gradient(to top, #fcb045, #fd1d1d, #833ab4);
+  z-index: 500;
 }
 
 :root {
-    --background-color: #2d3436;
-    --dark-mode-bg-color: #121212;
-    --dark-mode-font-color: #fff;
-    --dark-mode-nav-color: #1a1c1d;
+  --background-color: #2d3436;
+  --dark-mode-bg-color: #121212;
+  --dark-mode-font-color: #fff;
+  --dark-mode-nav-color: #1a1c1d;
 }
 
 body {
-    transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .dark_mode {
-    background-color: var(--dark-mode-bg-color);
-    color: var(--dark-mode-font-color);
+  background-color: var(--dark-mode-bg-color);
+  color: var(--dark-mode-font-color);
 }
 
 .toggle_dark_mode {
-    position: fixed !important;
-    top: 80% !important;
-    right: 2% !important;
+  position: fixed !important;
+  top: 80% !important;
+  right: 2% !important;
 }
 
 nav {
-    height: 10vh !important;
-    background-color: #3dc1d3!important;
+  height: 10vh !important;
+  background-color: #3dc1d3;
 }
 
 .brand-logo {
-    margin: auto !important;
-    margin-top: -15px !important;
+  margin: auto !important;
+  margin-top: -15px !important;
 }
 
 .dark_mode nav {
-    background-color: #2d3436 !important;
+  background-color: #2d3436 !important;
 }
 
 .card {
-    border-radius: 25px;
+  border-radius: 25px;
 }
 
 .dark_mode .card,
 .dark_mode .card-reveal {
-    background-color: #2d3436;
+  background-color: #2d3436;
 }
 
 .dark_mode .card-title {
-    color: white !important;
+  color: white !important;
 }
 
 .dark_mode .card-content a {
-    color: #0984e3 !important;
+  color: #0984e3 !important;
 }
 
 .dark_mode .sidenav {
-    background-color: #2d3436;
+  background-color: #2d3436;
 }
 
 .dark_mode .sidenav a {
-    color: #fff;
+  color: #fff;
 }
 
 .card-image img {
-    height: auto;
-    width: auto;
-    padding: 50px;
+  height: auto;
+  width: auto;
+  padding: 50px;
 }
 
-@media(max-width:789px) {
-    .dark_mode #progress-bar {
-        width: 5px;
-    }
+@media (max-width: 789px) {
+  .dark_mode #progress-bar {
+    width: 5px;
+  }
 }
