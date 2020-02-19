@@ -50,7 +50,7 @@ body {
 
 nav {
   height: 10vh !important;
-  background-color: #3dc1d3;
+  background-color: #00b8ff !important;
 }
 
 .brand-logo {
@@ -91,6 +91,17 @@ nav {
   height: auto;
   width: auto;
   padding: 50px;
+}
+.dark_mode .modal-content,
+.dark_mode .modal-footer {
+  background-color: #2d3436 !important;
+  color: white !important;
+}
+.dark_mode .modal-footer a {
+  color: white !important;
+}
+.dark_mode .card-content a {
+  color: white !important;
 }
 
 @media (max-width: 789px) {
