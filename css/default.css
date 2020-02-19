@@ -108,4 +108,7 @@ nav {
   .dark_mode #progress-bar {
     width: 5px;
   }
+  nav {
+    height: 11vh !important;
+  }
 }
