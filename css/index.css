@@ -204,6 +204,12 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  .card {
+    margin: 2%;
+  }
+  .depart_wrapper {
+    width: 100%;
+  }
   .img_wrapper {
     margin-top: 0 !important;
   }

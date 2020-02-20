@@ -45,9 +45,17 @@ body {
 .toggle_dark_mode {
   position: fixed !important;
   top: 80% !important;
-  right: 2% !important;
+  right: 1% !important;
 }
-
+.imp_news {
+  position: fixed !important;
+  top: 80% !important;
+  left: 1% !important;
+}
+.dark_mode .imp_news,
+.dark_mode .toggle_dark_mode {
+  color: white !important;
+}
 nav {
   height: 10vh !important;
   background-color: #2d3436 !important;
@@ -65,10 +73,9 @@ nav {
 .card {
   border-radius: 10px;
 }
-
 .dark_mode .card,
 .dark_mode .card-reveal {
-  background-color: #2d3436;
+  background-color: #2d3436 !important;
 }
 
 .dark_mode .card-title {
@@ -82,11 +89,12 @@ nav {
 .dark_mode .sidenav {
   background-color: #2d3436;
 }
-
 .dark_mode .sidenav a {
   color: #fff;
 }
-
+.dark_mode .collapsible-header {
+  background-color: #2d3436;
+}
 .card-image img {
   height: auto;
   width: auto;
@@ -100,8 +108,25 @@ nav {
 .dark_mode .modal-footer a {
   color: white !important;
 }
-.dark_mode .card-content a {
+.event_wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+.text_high {
+  font-weight: 700;
+}
+.card .card-title {
   color: white !important;
+}
+.card .card-content a {
+  color: black !important;
+}
+
+@media (max-width: 789px) {
+  .event_wrapper {
+    width: 95%;
+  }
 }
 @media (max-width: 789px) {
   .dark_mode #progress-bar {
