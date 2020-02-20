@@ -50,7 +50,7 @@ body {
 
 nav {
   height: 10vh !important;
-  background-color: #00b8ff !important;
+  background-color: #2d3436 !important;
 }
 
 .brand-logo {
@@ -63,7 +63,7 @@ nav {
 }
 
 .card {
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 .dark_mode .card,
@@ -103,12 +103,15 @@ nav {
 .dark_mode .card-content a {
   color: white !important;
 }
-
 @media (max-width: 789px) {
   .dark_mode #progress-bar {
     width: 5px;
   }
   nav {
     height: 11vh !important;
+  }
+  .modal {
+    height: 100% !important;
+    width: 95% !important;
   }
 }
