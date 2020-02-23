@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('.carousel').carousel({
         duration: 200,
         fullWidth: true,
@@ -6,19 +6,19 @@ $(document).ready(function() {
         numVisible: 5,
         autoplay: true
     });
-    setInterval(function() {
+    setInterval(function () {
         $('.carousel').carousel('next');
     }, 2000);
 
     $('.collapsible').collapsible();
-    setTimeout(function() {
+    setTimeout(function () {
         $('.scroll_down').css('visibility', 'visible');
     }, 3000);
 });
 
 var countDownDate = new Date("Mar 23, 2020 00:00:00").getTime();
 
-var x = setInterval(function() {
+var x = setInterval(function () {
 
     var now = new Date().getTime();
 
@@ -38,5 +38,8 @@ var x = setInterval(function() {
         clearInterval(x);
     }
 }, 1000);
+
+console.log(window.navigator.platform);
+console.log(window.navigator.appName);
 
 AOS.init();
