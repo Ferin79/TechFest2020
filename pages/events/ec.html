@@ -1,54 +1,688 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECC | Inspire 2020</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/default.css" />
+    <style>
+      .card .card-title {
+        color: black !important;
+      }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events | EEC</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/default.css">
-</head>
+      .dark_mode .card .card-title {
+        color: white !important;
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
     <div id="progress-bar"></div>
     <nav>
-        <div class="nav-wrapper">
-            <a href="/" class="brand-logo"><img src="../../images/logo_dark.png" height="auto" width="200"></a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="/">Home</a></li>
-                <li><a href="../../index.html#department">Departments</a></li>
-                <li><a href="../committee.html">Committee</a></li>
-            </ul>
-        </div>
+      <div class="nav-wrapper">
+        <a href="../../index.html" class="brand-logo"
+          ><img src="../../images/logo_dark.png" height="auto" width="200"
+        /></a>
+
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/">Home</a></li>
+          <li class="active"><a href="../departments.html">Events</a></li>
+          <li><a href="../departments.html">Departments</a></li>
+          <li><a href="../committee.html">Committee</a></li>
+        </ul>
+      </div>
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="/">Home</a></li>
-        <li><a href="../../index.html#departments">Departments</a></li>
-        <li><a href="../committee.html">Committee</a></li>
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../departments.html">Departments</a></li>
+      <li class="active"><a href="../departments.html">Events</a></li>
+      <li><a href="../committee.html">Committee</a></li>
     </ul>
 
-    <h3 class="center">E.C. Events</h3>
+    <h3 class="center">Eletronics & Communications</h3>
 
-    <section class="events_wrapper">
-        <div class="row" id="event_added">
-
+    <section class="event_wrapper">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card" id="1">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img
+                class="activator responsive-img"
+                src="../../images/events/eec/robo (1).png"
+                height="350"
+                width="200"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"
+                >Death Race</span
+              >
+              <a href="#modal1" class="modal-trigger">Read More</a>
+            </div>
+          </div>
         </div>
+
+        <div id="modal1" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>
+              Death Race:<span class="badge white-text blue">EC-DEATH</span>
+            </h4>
+            <p>Min Team:<strong class="text_high">4 Members</strong></p>
+            <p>Max Team: <strong class="text_high">4 Members</strong></p>
+            <p>Department: <strong class="text_high">Computer</strong></p>
+            <p>Price: <strong class="text_high">INR 50 per Head</strong></p>
+            <br />
+
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header">Event Description</div>
+                <div class="collapsible-body">
+                  <p>
+                    Survival of the strongest. Here the ROBO will face the
+                    moving obstacles like, open close gates, Tunnels, See-Saw,
+                    Flapper, Water, Bridges etc.“One who falls behind is left
+                    behind”. So pack your bags and pump your bots because it’s
+                    get, set and GO!!!
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Events Rules</div>
+                <div class="collapsible-body">
+                  1. All the required accessories have to be brought by the
+                  participants.
+                  <br />
+
+                  2. The participants are not allowed to damage the track, or
+                  indulge in any argument with the coordinator as this will lead
+                  to disqualification of their robot.
+                  <br />
+
+                  3. Coordinators reserve the right to ask for explanation of
+                  the robot.
+                  <br />
+
+                  4. The wireless remote control sets must be handed over to the
+                  event coordinator at the time of reporting, so as to avoid any
+                  illegal control of the Robot due to interference caused by the
+                  intentional or unintentional matching of radio frequencies of
+                  different participants.
+                  <br />
+                  5. In case of wire entanglement, the timers will not be
+                  stopped and the race will be restarted from the previous
+                  checkpoint.
+                  <br />
+                  6. Sufficient time will be given to the team before the start
+                  to study the arena and devise game play strategy.
+                  <br />
+                  7. Certificate of participation will be given to all
+                  participants can take actively part in event. If student will
+                  register and not attain the event, they cannot get
+                  certificate.
+                  <br />
+                  8. In case of wire entanglement, the timers will not be
+                  stopped and the race will be restarted from the previous
+                  checkpoint.
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Evaluation Criterias</div>
+                <div class="collapsible-body">
+                  <h6 class="text_high">Round 1</h6>
+                  <p>
+                    Elimination Round.
+                    <br />
+
+                    Participants will complete the track in given time interval.
+                    Who will
+                    <br />
+                    complete the track in minimum time interval; will be
+                    selected for next round.
+                  </p>
+                  <br />
+                  <h6 class="text_high">Round 2 (Day 2)</h6>
+                  <p>
+                    Elimination Round.
+                    <br />
+                    Participants will complete the track in given time interval.
+                    <br />
+                    Who will complete the track in minimum time interval, will
+                    selected for Runner up or winner
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Requirements</div>
+                <div class="collapsible-body">
+                  Round 1: D2-Building (Day 1)
+                  <br />
+                  Final Round: D2-Buiding (Day 2)
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Faculty Coordinator</div>
+                <div class="collapsible-body">
+                  <p>
+                    Dr. Amisha J. Shah (amisha.shah@ckpcet.ac.in) [9377616157]
+                    <br />
+                    Dr. Vijayendra A. Desai (vijayendra.desai@ckpcet.ac.in)
+                    [9408118010]
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Student Coordinator</div>
+                <div class="collapsible-body">
+                  <table class="striped responsive-table">
+                    <thead>
+                      <tr>
+                        <th>Enrollment No.</th>
+                        <th>Name</th>
+                        <th>Branch</th>
+                        <th>Year</th>
+                        <th>Contact</th>
+                        <th>Email ID</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>160090111002</td>
+                        <td>Desai Hardik</td>
+                        <td>ECE</td>
+                        <td>4th Year</td>
+                        <td>7433800970</td>
+                        <td>desaihardik1999@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>170090111010</td>
+                        <td>Mathukia Meet</td>
+                        <td>ECE</td>
+                        <td>3th Year</td>
+                        <td>9624793479</td>
+                        <td>meetpatel113413@gmail.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+              >That's Great</a
+            >
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card" id="2">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img
+                class="activator responsive-img"
+                src="../../images/events/eec/bowling.png"
+                height="350"
+                width="200"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"
+                >Bowling Mania</span
+              >
+              <a href="#modal2" class="modal-trigger">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal2" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>
+              Bowling Mania<span class="badge white-text blue">EC-BOWLING</span>
+            </h4>
+            <p>Min Team:<strong class="text_high">2 Members</strong></p>
+            <p>Max Team: <strong class="text_high">2 Members</strong></p>
+            <p>Department: <strong class="text_high">Computer</strong></p>
+            <p>Price: <strong class="text_high">INR 50 per Head</strong></p>
+            <br />
+
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header">Event Description</div>
+                <div class="collapsible-body">
+                  <p>
+                    The feeling of the ball hitting the pins, hearing and seeing
+                    them fall down, is deeply gratifying. We have all felt that
+                    instantaneous reward. It’s about control and chaos. Show off
+                    your bowling swag. Once you start bowling you won’t stop
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Events Rules</div>
+                <div class="collapsible-body">
+                  <p>
+                    1. Coordinators reserve the rights to ask for explanation of
+                    your bowling action.
+                    <br />
+                    2. Points will be deducted if the bowl touches any of the
+                    live hurdles..
+                    <br />
+                    3. Faculty and coordinator decision will be the final
+                    decision.
+                    <br />
+                    4. Damaging of any element will lead to direct
+                    disqualification.
+                    <br />
+                    5. Certificate of participant will be given to all
+                    participants who take part actively in the event.
+                    <br />
+                    6. If student will register and not attain the event, they
+                    won’t get the certificate.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Evaluation Criterias</div>
+                <div class="collapsible-body">
+                  <h6 class="text_high">Round 1</h6>
+                  <p>
+                    1. Elimination round. Participant must be able to put down
+                    maximum bowling-pins.
+                    <br />
+                    2. 12 chances will be given to every team.
+                    <br />
+                    3. Participant team need to score maximum points by putting
+                    down the bottle pins kept at the end of the bowling alley.
+                    Points will be deducted if the bowl touches any of the
+                    hurdle.
+                  </p>
+                  <br />
+                  <h6 class="text_high">Round 2 (Day 2)</h6>
+                  <p>
+                    1. Final Round.
+                    <br />
+                    2. The team with Maximum number of points will be announced
+                    as winner.
+                    <br />
+                    3. If required, the teams will also be judged on the basis
+                    of time taken by them to complete their chances.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Requirements</div>
+                <div class="collapsible-body">
+                  Round 1: D2-Building (Day 1)
+                  <br />
+                  Final Round: D2-Buiding (Day 2)
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Faculty Coordinator</div>
+                <div class="collapsible-body">
+                  <p>
+                    Dr. Mita C. Paunwala (mita.paunwala@ckpcet.ac.in)
+                    [982546934]
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Student Coordinator</div>
+                <div class="collapsible-body">
+                  <table class="striped responsive-table">
+                    <thead>
+                      <tr>
+                        <th>Enrollment No.</th>
+                        <th>Name</th>
+                        <th>Branch</th>
+                        <th>Year</th>
+                        <th>Contact</th>
+                        <th>Email ID</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>170090111017</td>
+                        <td>Shaikh Soheb</td>
+                        <td>ECE</td>
+                        <td>3rd Year</td>
+                        <td>9726123398</td>
+                        <td>sohaibshaikh1716@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>180090111008</td>
+                        <td>Patel Harsh</td>
+                        <td>ECE</td>
+                        <td>2nd Year</td>
+                        <td>9920915425</td>
+                        <td>harshjp1799@gmail.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+              >That's Great</a
+            >
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card" id="3">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img
+                class="activator responsive-img"
+                src="../../images/events/eec/bombdiffuser.svg"
+                height="350"
+                width="200"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"
+                >Bomb Diffuser</span
+              >
+              <a href="#modal3" class="modal-trigger">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal3" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>
+              Bomb Diffuser<span class="badge white-text blue">EC-BOMB</span>
+            </h4>
+            <p>Min Team:<strong class="text_high">2 Members</strong></p>
+            <p>Max Team: <strong class="text_high">2 Members</strong></p>
+            <p>Department: <strong class="text_high">Computer</strong></p>
+            <p>Price: <strong class="text_high">INR 50 per Head</strong></p>
+            <br />
+
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header">Event Description</div>
+                <div class="collapsible-body">
+                  <p>
+                    “Code is like humour. When you have to explain it, it’s
+                    bad.” Keeping this in mind here you have to play with the
+                    Arduino. Wisely and slowly .They stumble, they run fast, So
+                    pack your bags and get ready to play with the bomb.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Events Rules</div>
+                <div class="collapsible-body">
+                  <p>
+                    1. The participants are not allowed to damage the kit and
+                    material which will be provided.
+                    <br />
+
+                    2. In case of any damage penalty will be charged.
+                    <br />
+                    3. Faculty and Coordinators decision will be considered
+                    final.
+                    <br />
+                    4. Certificate of participation will be given to all
+                    participants can take actively part in event.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Evaluation Criterias</div>
+                <div class="collapsible-body">
+                  <h6 class="text_high">Round 1</h6>
+                  <p>
+                    1. Quiz Round on Arduino.
+                    <br />
+                    2. Points of this round will be added to next round
+                  </p>
+                  <br />
+                  <h6 class="text_high">Round 2</h6>
+                  <p>
+                    Bomb Diffuser round, in this round teams will be given a
+                    specific hardware to resolve. Depending on the time taken by
+                    the teams to solve the riddle points will be given
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Requirements</div>
+                <div class="collapsible-body">
+                  <p>
+                    Round 1: D2-Building [107-1] (Day 1) [30 minutes]
+                    <br />
+                    Final Round: D2-Buiding [107-1] (Day 1) [3 Hrs]
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Faculty Coordinator</div>
+                <div class="collapsible-body">
+                  <p>
+                    Dr. Mayana J. Shah (mayna.shah@ckpcet.ac.in) [9898130383]
+                    <br />
+                    Prof. Harikrushna C. Parmar
+                    (harekrishna.parmar@ckpcet.ac.in) [9998806059]
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Student Coordinator</div>
+                <div class="collapsible-body">
+                  <table class="striped responsive-table">
+                    <thead>
+                      <tr>
+                        <th>Enrollment No.</th>
+                        <th>Name</th>
+                        <th>Branch</th>
+                        <th>Year</th>
+                        <th>Contact</th>
+                        <th>Email ID</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>160090111011</td>
+                        <td>Pandit Rahul</td>
+                        <td>ECE</td>
+                        <td>4th Year</td>
+                        <td>9033672891</td>
+                        <td>panditrahul445@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>170090111009</td>
+                        <td>Kotak Vyoma</td>
+                        <td>ECE</td>
+                        <td>3rd Year</td>
+                        <td>8200013233</td>
+                        <td>vyomakotak@gmail.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+              >That's Great</a
+            >
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card" id="4">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img
+                class="activator responsive-img"
+                src="../../images/events/eec/big capatalist (1).png"
+                height="350"
+                width="200"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"
+                >The Big Capitalist</span
+              >
+              <a href="#modal4" class="modal-trigger">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal4" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>
+              The Big Capitalist<span class="badge white-text blue"
+                >EC-CAPT</span
+              >
+            </h4>
+            <p>Min Team:<strong class="text_high">4 Members</strong></p>
+            <p>Max Team: <strong class="text_high">4 Members</strong></p>
+            <p>Department: <strong class="text_high">Computer</strong></p>
+            <p>Price: <strong class="text_high">INR 50 per Head</strong></p>
+            <br />
+
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header">Event Description</div>
+                <div class="collapsible-body">
+                  <p>
+                    It’s a single round event where you need to showcase your
+                    management skills. You may be provided with virtual money
+                    and asked about your plans with the help of which you can
+                    maximize your profits
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Events Rules</div>
+                <div class="collapsible-body">
+                  <p>
+                    Virtual Money will be deposited to the participants account.
+                    <br />
+                    The participants will be judged on the basis of:
+                    <br />
+                    1. Business model
+                    <br />
+                    2. Team management skills
+                    <br />
+                    3. Revenue generation
+                    <br />
+                    4. Community / Social Development
+                    <br />
+                    5. National Economy Growth
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Evaluation Criterias</div>
+                <div class="collapsible-body">
+                  <h6 class="text_high">Round 1</h6>
+                  <p>
+                    You may be provided with virtual money.
+                    <br />
+                    You need to present your idea to the Jury, on how your team
+                    will use the money to maximize the profit
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Requirements</div>
+                <div class="collapsible-body">
+                  <p>
+                    Round 1: D2-Building [205] (Day 1): [3 Hrs Event]
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Faculty Coordinator</div>
+                <div class="collapsible-body">
+                  <p>
+                    Dr. Ninand S. Bhatt (ninand.bhatt@ckpcet.ac.in) [9925047255]
+                    <br />
+                    Prof. Priyanka Lineswala (plineswala@gmail.com)[9998805082]
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Student Coordinator</div>
+                <div class="collapsible-body">
+                  <table class="striped responsive-table">
+                    <thead>
+                      <tr>
+                        <th>Enrollment No.</th>
+                        <th>Name</th>
+                        <th>Branch</th>
+                        <th>Year</th>
+                        <th>Contact</th>
+                        <th>Email ID</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>170090111013</td>
+                        <td>Divya Patel</td>
+                        <td>ECE</td>
+                        <td>3rd Year</td>
+                        <td>8160342613</td>
+                        <td>shivpatel480@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>180090111009</td>
+                        <td>Raxit Patel</td>
+                        <td>ECE</td>
+                        <td>2nd Year</td>
+                        <td>9409260485</td>
+                        <td>raxitpatel2015@gmail.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+              >That's Great</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
 
+    <a
+      class="btn-floating btn-large waves-effect waves-light black right toggle_dark_mode"
+      style="margin-right: 20px;"
+      ><i class="material-icons">invert_colors</i></a
+    >
+  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../../js/darkmode.js"></script>
+  <script src="../../js/color.js"></script>
 
-
-
-    <a class="btn-floating btn-large waves-effect waves-light black right toggle_dark_mode" style="margin-right: 20px;"><i class="material-icons">invert_colors</i></a>
-
-</body>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="../../js/darkmode.js"></script>
-<script src="../../js/ec.js"></script>
-
+  <script>
+    $(".modal").modal();
+    $(".collapsible").collapsible();
+  </script>
 </html>
