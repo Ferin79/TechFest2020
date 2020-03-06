@@ -1,50 +1,900 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applied Science | Inspire 2020</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/default.css" />
+    <style>
+      .card .card-title {
+        color: black !important;
+      }
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events | Applied Science</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/default.css">
-</head>
+      .dark_mode .card .card-title {
+        color: white !important;
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
     <div id="progress-bar"></div>
     <nav>
-        <div class="nav-wrapper">
-            <a href="/" class="brand-logo"><img src="../../images/logo_dark.png" height="auto" width="200"></a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="/">Home</a></li>
-                <li><a href="../../index.html#department">Departments</a></li>
-                <li><a href="../committee.html">Committee</a></li>
-            </ul>
-        </div>
+      <div class="nav-wrapper">
+        <a href="../../index.html" class="brand-logo"
+          ><img src="../../images/logo_dark.png" height="auto" width="200"
+        /></a>
+
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/">Home</a></li>
+          <li class="active"><a href="../departments.html">Events</a></li>
+          <li><a href="../departments.html">Departments</a></li>
+          <li><a href="../committee.html">Committee</a></li>
+        </ul>
+      </div>
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="/">Home</a></li>
-        <li><a href="../../index.html#departments">Departments</a></li>
-        <li><a href="../committee.html">Committee</a></li>
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../departments.html">Departments</a></li>
+      <li class="active"><a href="../departments.html">Events</a></li>
+      <li><a href="../committee.html">Committee</a></li>
     </ul>
-    <h3 class="center">Applied Science Events</h3>
-    <section class="events_wrapper">
-        <div class="row" id="event_added">
 
+    <h3 class="center">Applied Science</h3>
+
+    <section class="event_wrapper">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card" id="1">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img
+                class="activator responsive-img"
+                src="../../images/events/applied/blind game (1).png"
+                height="350"
+                width="200"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"
+                >Blind Game
+              </span>
+              <a href="#modal1" class=" modal-trigger">Read More</a>
+            </div>
+          </div>
         </div>
+
+        <div id="modal1" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>
+              Blind Game
+              <span class="badge white-text blue">APPLIED-BLIND</span>
+            </h4>
+            <p>Min Team:<strong style="font-weight: 700;">4 Members</strong></p>
+            <p>
+              Max Team: <strong style="font-weight: 700;">4 Members</strong>
+            </p>
+            <p>
+              Department: <strong style="font-weight: 700;">Computer</strong>
+            </p>
+            <p>
+              Price: <strong style="font-weight: 700;">INR 50 per Head</strong>
+            </p>
+
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header">Events Description</div>
+                <div class="collapsible-body">
+                  <p>
+                    This event is combination of knowledge, fun & games. There
+                    will be 3 Rounds
+                  </p>
+                  <br />
+                  <p style="font-weight: 700;">
+                    Round 1 Quiz (Pan & Paper round)
+                  </p>
+                  <p>
+                    1. Solve 25-30 questions.
+                    <br />
+                    2. Max.Time limit- 30 min <br />
+                    3. Elimination based on marks will be given from answer of
+                    questions
+                  </p>
+                  <br />
+                  <p style="font-weight: 700;">Round 2 Fun Games</p>
+                  <p>
+                    1. Max.Time limit: 20 min
+                    <br />
+                    2. Elimination based on Fastest Fingers First
+                  </p>
+                  <br />
+                  <p style="font-weight: 700;">Round 3 Complete the Path</p>
+                  <p>
+                    1. Max.Time limit: 20 min
+                    <br />
+                    2. Elimination based on Fastest Fingers First
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="collapsible-header">Evaluation Criteria</div>
+                <div class="collapsible-body">
+                  <p>
+                    1. Elimination will be based on the completion of the
+                    assigned task at the earliest in each round.
+                    <br />
+                    2. A Candidate who completes all the levels will be declared
+                    as a winner. <br />
+                    3. There will be no negative marking. <br />
+                    4. The winner of round 2& 3 will be based on lowest time
+                    taken for the complete the task. 3/8
+                    <br />
+                    5. If participant make any mistake or foul the 10 seconds
+                    add to their time will be there panty.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="collapsible-header">Event Rules</div>
+                <div class="collapsible-body">
+                  <p>
+                    1. There will be 3 rounds(ROUND 1,2& FINAL ROUND)
+                    <br />
+                    2. Each team have consist of 4 participants. (Not more then
+                    4)
+                    <br />
+                    3. Questions shall be in the form of multiple choice,
+                    True/False statement, Specific-answer, One word-answer,
+                    Error solving, output etc.
+                    <br />
+                    4. The time limit will be strictly monitored according to
+                    event start time. Any violation of the same will lead to
+                    immediate disqualification without notice.
+                    <br />
+                    5. In case of any dispute, the decision of the organizers
+                    will be final.
+                    <br />
+                    6. No discussion between participants is allowed once the
+                    event starts, otherwise, the organizers have the full
+                    authority to disqualify the participants.
+                    <br />
+                    7. Participants shall not be allowed to use mobile or other
+                    electronic instruments.
+                    <br />
+                    8. All participants will be given participations
+                    certificate.
+                    <br />
+                    9. The organizing team has the right to change the rules and
+                    regulations of event.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="collapsible-header">Faculty Coordinator</div>
+                <div class="collapsible-body">
+                  <p style="font-weight: bold;">
+                    Dr. Nisha B. Vyas (9925351583, nisha.vyas@ckpcet.ac.in )
+                    <br />
+                    Ms. Krutika I Patel (9099461900, krutika.patel@ckpcet.ac.in
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="collapsible-header">Student Coordinator</div>
+                <div class="collapsible-body">
+                  <table class="striped responsive-table">
+                    <thead>
+                      <tr>
+                        <th>Enrollment No.</th>
+                        <th>Name</th>
+                        <th>Branch</th>
+                        <th>Year</th>
+                        <th>Contact</th>
+                        <th>Email ID</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>170093106007</td>
+                        <td>Samarth Kinkhabwala</td>
+                        <td>Civil</td>
+                        <td>4th Year</td>
+                        <td>7567336936</td>
+                        <td>samarthkinkhabwala5@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>170090106004</td>
+                        <td>Saloni Gandhi</td>
+                        <td>Civil</td>
+                        <td>3th Year</td>
+                        <td>7016036773</td>
+                        <td>gandhi.saloni99@gmail.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+              >That's Great</a
+            >
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card" id="2">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img
+                class="activator responsive-img"
+                src="../../images/events/applied/The Escape Room (1).png"
+                height="350"
+                width="200"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"
+                >The Escape Room
+              </span>
+              <a href="#modal2" class=" modal-trigger">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal2" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>
+              The Escape Room
+              <span class="badge white-text blue">APPLIED-ESCAP</span>
+            </h4>
+            <p>Min Team:<strong style="font-weight: 700;">2 Members</strong></p>
+            <p>
+              Max Team: <strong style="font-weight: 700;">2 Members</strong>
+            </p>
+            <p>
+              Department: <strong style="font-weight: 700;">Mechanical</strong>
+            </p>
+            <p>
+              Price: <strong style="font-weight: 700;">INR 50 per Head</strong>
+            </p>
+
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header">Events Description</div>
+                <div class="collapsible-body">
+                  <p style="font-weight: 700;">
+                    Round 1 Quiz (Pan & Paper round)
+                  </p>
+                  <p>
+                    Solve 30 questions
+                    <br />
+                    • Negative marking will be applied for each wrong question
+                    (0.33)
+                    <br />
+                    • Maximum time limit : 15 min
+                    <br />
+                    • Elimination based on Marks
+                  </p>
+                  <br />
+                  <p style="font-weight: 700;">Round 2 Solving Riddles</p>
+                  <p>
+                    Maximum time limits : 15 min
+                    <br />
+                    • Elimination based on Fastest figure first
+                    <br />
+                    • Time based event
+                  </p>
+                  <br />
+                  <p style="font-weight: 700;">Round 3 The escape room</p>
+                  <p>
+                    No time limit required
+                    <br />
+                    • Elimination based on Fastest figure first
+                    <br />
+                    • Solve mystery, open the door & win.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="collapsible-header">Evaluation Criteria</div>
+                <div class="collapsible-body">
+                  <p>
+                    1) Elimination will be based on the completion of the
+                    assigned task at the earliest at each round.
+                    <br />
+                    2) A candidate who successfully complete all the rounds they
+                    will declared as a WINNER.
+                    <br />
+                    3) Negative marking will be applied on round 1. (0.33
+                    marking on each wrong answer).
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="collapsible-header">Event Rules</div>
+                <div class="collapsible-body">
+                  <p>
+                    1) There will be 3 rounds (ROUND 1,2& FINAL ROUND).
+                    <br />
+                    2) Each team have consist of 2 &4 participants. (But not
+                    more then 4).
+                    <br />
+                    3) Questions shall be in the form of multiple choice.
+                    <br />
+                    4) The time limit will be strictly monitored according to
+                    event start time. Any violation of the same will lead to
+                    immediate disqualification without notice.
+                    <br />
+                    5) In case of any dispute, the decision of the organizers
+                    will be final.
+                    <br />
+                    6) Participants shall not be allowed to use mobile or other
+                    electronic instruments.
+                    <br />
+                    7) All participants will be given participations
+                    certificate.
+                    <br />
+                    8) The organizing team has the right to change the rules and
+                    regulations. of event.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="collapsible-header">Faculty Coordinator</div>
+                <div class="collapsible-body">
+                  <p style="font-weight: bold;">
+                    Dr. Nisha B. Vyas (9925351583, nisha.vyas@ckpcet.ac.in )
+                    <br />
+                    Ms. Krutika I Patel (9099461900, krutika.patel@ckpcet.ac.in
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="collapsible-header">Student Coordinator</div>
+                <div class="collapsible-body">
+                  <table class="striped responsive-table">
+                    <thead>
+                      <tr>
+                        <th>Enrollment No.</th>
+                        <th>Name</th>
+                        <th>Branch</th>
+                        <th>Year</th>
+                        <th>Contact</th>
+                        <th>Email ID</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>170093106007</td>
+                        <td>Samarth Kinkhabwala</td>
+                        <td>Civil</td>
+                        <td>4th Year</td>
+                        <td>7567336936</td>
+                        <td>samarthkinkhabwala5@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>170090106004</td>
+                        <td>Saloni Gandhi</td>
+                        <td>Civil</td>
+                        <td>3th Year</td>
+                        <td>7016036773</td>
+                        <td>gandhi.saloni99@gmail.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+              >That's Great</a
+            >
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card" id="3">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img
+                class="activator responsive-img"
+                src="../../images/events/applied/Strategic Mind (1).png"
+                height="350"
+                width="200"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"
+                >Strategic Mind
+              </span>
+              <a href="#modal3" class=" modal-trigger">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal3" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>
+              Strategic Mind
+              <span class="badge white-text blue">APPLIED-STRATE</span>
+            </h4>
+            <p>Min Team:<strong style="font-weight: 700;">4 Members</strong></p>
+            <p>
+              Max Team: <strong style="font-weight: 700;">4 Members</strong>
+            </p>
+            <p>
+              Department: <strong style="font-weight: 700;">Mechanical</strong>
+            </p>
+            <p>
+              Price: <strong style="font-weight: 700;">INR 50 per Head</strong>
+            </p>
+
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header">Events Description</div>
+                <div class="collapsible-body">
+                  <p style="font-weight: 700;">
+                    Round 1 Quiz (Pan & Paper round)
+                  </p>
+                  <p>
+                    Solve 30 questions
+                    <br />
+                    • Negative marking will be applied for each wrong question
+                    (0.33)
+                    <br />
+                    • Maximum time limit : 15 min
+                    <br />
+                    • Elimination based on Marks
+                  </p>
+                  <br />
+                  <p style="font-weight: 700;">Round 2 Solving Riddles</p>
+                  <p>
+                    Maximum time limits : 15 min
+                    <br />
+                    • Elimination based on Fastest figure first
+                    <br />
+                    • Time based event
+                  </p>
+                  <br />
+                  <p style="font-weight: 700;">Round 3 The escape room</p>
+                  <p>
+                    No time limit required
+                    <br />
+                    • Elimination based on Fastest figure first
+                    <br />
+                    • Solve mystery, open the door & win.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="collapsible-header">Evaluation Criteria</div>
+                <div class="collapsible-body">
+                  <p>
+                    1. Quiz (30 minutes) the team with less points will be
+                    disqualified.
+                    <br />
+                    2. List of 10 things will be given, and participants have to
+                    find the things from college campus.
+                    <br />
+                    3. Track ( the rules & condition for the track will be
+                    informed to participants at that moment)
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="collapsible-header">Evaluation Rules</div>
+                <div class="collapsible-body">
+                  <p>
+                    • There will be 3 rounds ( round 1,2 and final round)
+                    <br />
+                    • Each team should have 4 members.( Not more then 4 member)
+                    <br />
+                    • Questions shall be in the form of multiple choice,
+                    true/false , one word answer, etc.
+                    <br />
+                    • The time limit will be stricly monitored according to
+                    event start time.
+                    <br />
+                    • In case of any issue or dispute, the decision of the
+                    organizers will be final.
+                    <br />
+                    • Certificate will be given to all participants.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="collapsible-header">Faculty Coordinator</div>
+                <div class="collapsible-body">
+                  <p style="font-weight: bold;">
+                    Dr. Nisha B. Vyas (9925351583, nisha.vyas@ckpcet.ac.in )
+                    <br />
+                    Ms. Krutika I Patel (9099461900, krutika.patel@ckpcet.ac.in
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="collapsible-header">Student Coordinator</div>
+                <div class="collapsible-body">
+                  <table class="striped responsive-table">
+                    <thead>
+                      <tr>
+                        <th>Enrollment No.</th>
+                        <th>Name</th>
+                        <th>Branch</th>
+                        <th>Year</th>
+                        <th>Contact</th>
+                        <th>Email ID</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>170093106007</td>
+                        <td>Samarth Kinkhabwala</td>
+                        <td>Civil</td>
+                        <td>4th Year</td>
+                        <td>7567336936</td>
+                        <td>samarthkinkhabwala5@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>170090106004</td>
+                        <td>Saloni Gandhi</td>
+                        <td>Civil</td>
+                        <td>3th Year</td>
+                        <td>7016036773</td>
+                        <td>gandhi.saloni99@gmail.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+              >That's Great</a
+            >
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card" id="4">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img
+                class="activator responsive-img"
+                src="../../images/events/applied/box-cricket.png"
+                height="350"
+                width="200"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"
+                >Box Cricket
+              </span>
+              <a href="#modal4" class=" modal-trigger">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal4" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>
+              Box Cricket
+              <span class="badge white-text blue">APPLIED-CRIC</span>
+            </h4>
+            <p>Min Team:<strong style="font-weight: 700;">4 Members</strong></p>
+            <p>
+              Max Team: <strong style="font-weight: 700;">4 Members</strong>
+            </p>
+            <p>Department: <strong style="font-weight: 700;">D-4</strong></p>
+            <p>
+              Price: <strong style="font-weight: 700;">INR 50 per Head</strong>
+            </p>
+
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header">Events Description</div>
+                <div class="collapsible-body">
+                  <p>
+                    Box cricket or indoor cricket is a variant of cricket that
+                    shares many basic concepts with the original game but with
+                    added enhancements to improve the engagement and enjoyment
+                    of casual players. Different variants exist within box
+                    cricket based on the abilities and availability of players
+                    for the match.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="collapsible-header">Events Rules</div>
+                <div class="collapsible-body">
+                  <p>
+                    1.) Four playermust per team.
+                    <br />
+                    2.) Each team have 4-6 overs.
+                    <br />
+                    3.) There is one powerover which can use by team any time,
+                    in power over run may double. During power over: 1 run = 2
+                    run Wide & no-ball = 5 run 1 wicket = (-3) run
+                    <br />
+                    4.) over is equally divided for each player.
+                    <br />
+                    4.) Underarm bowling is compulsory.
+                    <br />
+                    5.) your team must have to reach the ground before 15 minute
+                    of allocated time else the team will be disqualified.
+                    <br />
+                    6.) after being disqualified the registration fee will not
+                    be refunded.
+                    <br />
+                    7.) extra run will given similar as cricket rules ( i.e
+                    no-ball, wide ball, legby, over throw ).
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="collapsible-header">Faculty Coordinator</div>
+                <div class="collapsible-body">
+                  <p style="font-weight: bold;">
+                    Dr. Nisha B. Vyas (9925351583, nisha.vyas@ckpcet.ac.in )
+                    <br />
+                    Ms. Krutika I Patel (9099461900, krutika.patel@ckpcet.ac.in
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="collapsible-header">Student Coordinator</div>
+                <div class="collapsible-body">
+                  <table class="striped responsive-table">
+                    <thead>
+                      <tr>
+                        <th>Enrollment No.</th>
+                        <th>Name</th>
+                        <th>Branch</th>
+                        <th>Year</th>
+                        <th>Contact</th>
+                        <th>Email ID</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>170093106007</td>
+                        <td>Samarth Kinkhabwala</td>
+                        <td>Civil</td>
+                        <td>4th Year</td>
+                        <td>7567336936</td>
+                        <td>samarthkinkhabwala5@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>170090106004</td>
+                        <td>Saloni Gandhi</td>
+                        <td>Civil</td>
+                        <td>3th Year</td>
+                        <td>7016036773</td>
+                        <td>gandhi.saloni99@gmail.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+              >That's Great</a
+            >
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card" id="5">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img
+                class="activator responsive-img"
+                src="../../images/events/applied/meme.png"
+                height="350"
+                width="200"
+              />
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4"
+                >Memespur</span
+              >
+              <a href="#modal5" class=" modal-trigger">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="modal5" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>
+              Memespur <span class="badge white-text blue">APPLIED-MEME</span>
+            </h4>
+            <p>Min Team:<strong style="font-weight: 700;">2 Members</strong></p>
+            <p>
+              Max Team: <strong style="font-weight: 700;">2 Members</strong>
+            </p>
+            <p>
+              Department: <strong style="font-weight: 700;">Mechanical</strong>
+            </p>
+            <p>
+              Price: <strong style="font-weight: 700;">INR 50 per Head</strong>
+            </p>
+
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header">Events Description</div>
+                <div class="collapsible-body">
+                  <p style="font-weight: 700;">
+                    Round 1 -> D7 department class room
+                  </p>
+                  <p>
+                    Solve 30 questions
+                    <br />
+                    • Negative marking will be applied for each wrong question
+                    (0.5)
+                    <br />
+                    • Maximum time limit : 20 min • Elimination based on Marks
+                  </p>
+                  <br />
+                  <p style="font-weight: 700;">Round 2</p>
+                  <p>
+                    Bidding for the memes.
+                    <br />
+                    • Time based event.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="collapsible-header">Evaluation Criteria</div>
+                <div class="collapsible-body">
+                  <p>
+                    1) Elimination will be based on the completion of the
+                    assigned task at the earliest at each round.
+                    <br />
+                    2) A candidate who successfully complete all the rounds will
+                    be the winner. 10 /8
+                    <br />
+                    3) Negative marking will be applied on round 1. (0.5 marking
+                    on each wrong answer).
+                    <br />
+                    4) Its for all social media freaks.
+                    <br />
+                    5) No pain No brain ONLY FUN.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="collapsible-header">Events Rules</div>
+                <div class="collapsible-body">
+                  <p>
+                    1) There will be 2 rounds (ROUND 1 & FINAL ROUND). And 2
+                    participants per group.
+                    <br />
+                    2) No offensive memes allowed.
+                    <br />
+                    3) Participants shall not be allowed to use mobile or other
+                    electronic instruments.
+                    <br />
+                    4) All participants will be given participations
+                    certificate.
+                    <br />
+                    5) The time limit will be strictly monitored according to
+                    event start time. Any violation of the same will lead to
+                    immediate disqualification without notice.
+                    <br />
+                    6) In case of any dispute, the decision of the organizers
+                    will be final.
+                    <br />
+                    7) The organizing team has the right to change the rules and
+                    regulations. of event.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <div class="collapsible-header">Faculty Coordinator</div>
+                <div class="collapsible-body">
+                  <p style="font-weight: bold;">
+                    Dr. Nisha B. Vyas (9925351583, nisha.vyas@ckpcet.ac.in )
+                    <br />
+                    Ms. Krutika I Patel (9099461900, krutika.patel@ckpcet.ac.in
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">Student Coordinator</div>
+                <div class="collapsible-body">
+                  <table class="striped responsive-table">
+                    <thead>
+                      <tr>
+                        <th>Enrollment No.</th>
+                        <th>Name</th>
+                        <th>Branch</th>
+                        <th>Year</th>
+                        <th>Contact</th>
+                        <th>Email ID</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>170093106007</td>
+                        <td>Samarth Kinkhabwala</td>
+                        <td>Civil</td>
+                        <td>4th Year</td>
+                        <td>7567336936</td>
+                        <td>samarthkinkhabwala5@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <td>170090106004</td>
+                        <td>Saloni Gandhi</td>
+                        <td>Civil</td>
+                        <td>3th Year</td>
+                        <td>7016036773</td>
+                        <td>gandhi.saloni99@gmail.com</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+              >That's Great</a
+            >
+          </div>
+        </div>
+      </div>
     </section>
 
-    <a class="btn-floating btn-large waves-effect waves-light black right toggle_dark_mode" style="margin-right: 20px;"><i class="material-icons">invert_colors</i></a>
+    <a
+      class="btn-floating btn-large waves-effect waves-light black right toggle_dark_mode"
+      style="margin-right: 20px;"
+      ><i class="material-icons">invert_colors</i></a
+    >
+  </body>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../../js/darkmode.js"></script>
+  <script src="../../js/color.js"></script>
 
-
-</body>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="../../js/darkmode.js"></script>
-<script src="../../js/applied.js"></script>
-
+  <script>
+    $(".modal").modal();
+    $(".collapsible").collapsible();
+  </script>
 </html>
