@@ -117,10 +117,10 @@ nav {
   font-weight: 700;
 }
 .card .card-title {
-  color: white !important;
+  color: black !important;
 }
 .card .card-content a {
-  color: black !important;
+  color: #0af !important;
 }
 
 @media (max-width: 789px) {

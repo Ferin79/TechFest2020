@@ -1,4 +1,4 @@
-const cacheName = "CKPTechFestV2";
+const cacheName = "CKPTechFestFinalV1";
 const files_to_cache = [
   "./",
   "./index.html",
