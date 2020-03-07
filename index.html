@@ -248,7 +248,34 @@
         </div>
     </section>
 
-
+    <section class="faculty_wrapper">
+        <h3 style="text-align: center;">Inspire Faculty</h3>
+        <div class="carousel carousel-slider">
+            <a class="carousel-item" href="#one!"><img class="responsive-img" src="./images/faculty/central.jpg">Central
+                Committee</a>
+            <a class="carousel-item" href="#two!"><img class="responsive-img"
+                    src="./images/faculty/campeighningCommittee.jpg">Campaigning
+                Committe</a>
+            <a class="carousel-item" href="#three!"><img class="responsive-img"
+                    src="./images/faculty/chiefsGS.jpg">Cheif GS</a>
+            <a class="carousel-item" href="#four!"><img class="responsive-img"
+                    src="./images/faculty/chiefsGSPrincipalTrustee.jpg">Principal &
+                Trustee</a>
+            <a class="carousel-item" href="#five!"><img class="responsive-img"
+                    src="./images/faculty/CODept.jpg">Computer Departments
+                Faulty</a>
+            <a class="carousel-item" href="#six!"><img class="responsive-img"
+                    src="./images/faculty/finance1.jpg">Finance Committee</a>
+            <a class="carousel-item" href="#nine!"><img class="responsive-img"
+                    src="./images/faculty/Photography1.jpg">Photography
+                Committee</a>
+            <a class="carousel-item" href="#ten!"><img class="responsive-img"
+                    src="./images/faculty/SponsorShipCommittee.jpg">Sponsorship
+                Committee</a>
+            <a class="carousel-item" href="#seven!"><img class="responsive-img" src="./images/faculty/IMG_0296.jpg"></a>
+            <a class="carousel-item" href="#eight!"><img class="responsive-img" src="./images/faculty/IMG_0312.jpg"></a>
+        </div>
+    </section>
 
     <section class="sponser_wrapper" id="sponsors">
         <h3 class="center">Sponsors</h3>
@@ -335,6 +362,7 @@
         backDelay: 1000,
         backSpeed: 50,
     });
+    $('.carousel.carousel-slider').carousel({ full_width: true });
     window.addEventListener('beforeinstallprompt', (e) => {
         let deferredPrompt = e;
         deferredPrompt.prompt();

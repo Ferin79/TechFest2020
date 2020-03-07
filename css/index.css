@@ -100,7 +100,20 @@ nav {
 .testimonial_wrapper {
   margin-top: 150px !important;
 }
-
+.faculty_wrapper {
+  width: 80%;
+  height: auto;
+  margin: 100px auto;
+}
+.faculty_wrapper a {
+  font-size: 16px;
+  color: black;
+  text-align: center;
+}
+.faculty_wrapper a img {
+  height: 100%;
+  width: 100%;
+}
 .sponser_wrapper {
   width: 75%;
   margin: 200px auto;
@@ -234,6 +247,14 @@ footer {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+  }
+  .faculty_wrapper {
+    padding-top: -50px;
+    width: 90%;
+    height: 50vh;
+  }
+  .faculty_wrapper h3 {
+    font-size: 25px;
   }
   .sponser_wrapper {
     width: 100%;
