@@ -16,7 +16,7 @@ $(document).ready(function () {
     }, 3000);
 });
 
-var countDownDate = new Date("Mar 23, 2021 00:00:00").getTime();
+var countDownDate = new Date("Mar 23, 2022 00:00:00").getTime();
 
 var x = setInterval(function () {
 
